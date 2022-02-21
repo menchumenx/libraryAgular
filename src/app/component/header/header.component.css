@@ -12,18 +12,52 @@
 }
 
 /* ****** */
+/* .header{
+    position: fixed;
+    
+} */
 .name{
-   background-image: ;
+   background-image: url('../../../assets/hokusai.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 300px;
+
+   text-align: right;
+   color:  rgba(32, 112, 177, 0.918);
+   padding: 20px;
+   padding-right: 3%;
+   font-size: 4rem;
+   
 }
+.name2{
+    display: none;
+    background-image: url('../../../assets/hokusai.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+ 
+}
+
 .nav{
     display: flex;
-    align-items: flex-start;
-    padding: 20px;
-    /* background-color: rgba(32, 112, 177, 0.918); */
+    justify-content: flex-end;
+    padding-right: 40px;
     border-bottom: 2px solid rgba(32, 112, 177, 0.918);
+
 }
 .nav a{
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
-  
+    color:  rgba(32, 112, 177, 0.918);
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 850px){
+  .name{
+      display: none;
+  }
+  .name2{
+      display: block;
+  }
 }
