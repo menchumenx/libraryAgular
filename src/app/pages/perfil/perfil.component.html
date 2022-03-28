@@ -1,0 +1,62 @@
+
+
+<div class="contenedor">
+  <!-- <div class="img"></div>
+        <h3>Nombre Apellido</h3> -->
+
+    <div class="contenedor__bloque--foto">
+
+        <div class="">
+            <img class="contenedor__bloque__img" src="../../../assets/fotoPerfil.jpg" alt="">
+        </div>
+        <h3 class="contenedor__bloque__title">{{miUser.name}} {{miUser.surename}}</h3>
+
+        <div action="" class="formContainer">
+            <div class="formContainer--data">
+                <label for="">Nombre</label>
+                <input class="formContainer_input"  type="text"  value="{{miUser.name}}"> 
+            </div>
+            <div class="formContainer--data">
+                <label for="">Apellido</label>
+                <input class="formContainer_input"  type="text" value="{{miUser.surename}}">
+            </div>
+            <div class="formContainer--data">
+                <label for="">Email</label>
+                <input class="formContainer_input"  type="text" value="{{miUser.mail}}">
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor__bloque">
+
+        <h3 class="contenedor__bloque__title">EDITAR DATOS </h3>
+
+        <form action="" class="formContainer">
+            <div class="formContainer--data">
+                <label for="">Nombre</label>
+                <input #name class="formContainer_input"  placeholder="Introduce el nuevo nombre" type="text">
+            </div>
+            <div class="formContainer--data">
+                <label for="">Apellido</label>
+                <input #surename class="formContainer_input"  placeholder="Introduce el nuevo apellido" type="text">
+            </div>
+            <div class="formContainer--data">
+                <label for="">Email</label>
+                <input #mail class="formContainer_input"  placeholder="Introduce el nuevo email" type="text">
+            </div>
+            <div class="formContainer--data">
+                <label for="">Url</label>
+                <input #url class="formContainer_input"  placeholder="Introduce uan url para cambiar tu foto de perfil" type="text">
+            </div>
+
+        </form>
+
+        <div class="endForm">
+            <div class="endForm__col">
+                <button  type="button" class="endForm__button" (click)="updateProfile(name.value, surename.value, mail.value, url.value)">Modificar</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
