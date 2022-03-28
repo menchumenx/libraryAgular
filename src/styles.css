@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --blue_text: rgba(32, 112, 177, 0.918);
+
+    --input_border : rgba(32, 112, 177, 0.918);
+
+    --darkBluel_OP:rgba(12, 43, 73, 0.911);
+
+    --whiteText:rgb(252, 248, 245);
+
+    --greylight:rgb(172, 171, 171);
+
+    
+ 
+}

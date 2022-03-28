@@ -11,24 +11,27 @@
     flex-direction: row;
 }
 
-/* ****** */
-/* .header{
-    position: fixed;
-    
-} */
+/* ***************** */
+
+.header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+}
+
 .name{
    background-image: url('../../../assets/hokusai.jpg');
    background-repeat: no-repeat;
    background-size: cover;
-   height: 300px;
 
    text-align: right;
-   color:  rgba(32, 112, 177, 0.918);
+   color:  var(--blue_text);
    padding: 20px;
    padding-right: 3%;
    font-size: 4rem;
-   
 }
+
 .name2{
     display: none;
     background-image: url('../../../assets/hokusai.jpg');
@@ -42,13 +45,17 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 40px;
-    border-bottom: 2px solid rgba(32, 112, 177, 0.918);
-
+    /* border-bottom: 2px solid var(--blue_text); */
+    background-color: var(--blue_text);
 }
 .nav a{
     padding: 20px;
     text-decoration: none;
-    color:  rgba(32, 112, 177, 0.918);
+    color: var(--whiteText);
+}
+.nav a:hover{
+    color: var( --darkBluel_OP);
+    text-decoration: underline var(--whiteText);
 }
 
 

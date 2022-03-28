@@ -1,0 +1,22 @@
+
+
+.footer {
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #2070b1ea;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.footer__text{
+    color: rgba(32, 112, 177, 0.918);
+    padding: 10px;
+
+    text-decoration: none;
+}
