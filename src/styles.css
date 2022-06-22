@@ -4,15 +4,15 @@
 }
 
 :root{
-    --blue_text: rgba(32, 112, 177, 0.918);
+    --blue_text: #2170b0ea;
 
     --input_border : rgba(32, 112, 177, 0.918);
 
-    --darkBluel_OP:rgba(12, 43, 73, 0.911);
+    --darkBluel_OP:#0c2b49e8;
 
     --whiteText:rgb(252, 248, 245);
 
-    --greylight:rgb(172, 171, 171);
+    --greylight:#acabab;
 
     
  

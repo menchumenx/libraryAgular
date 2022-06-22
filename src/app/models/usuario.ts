@@ -1,15 +1,8 @@
 export class Usuario {
 
-    public id_user: number
-    public name: string
-    public surename: string
-    public mail: string
-    public url: string
-    public password: string
-
-    constructor(
-        id_user: number, name: string, surename: string,
-        mail: string, url: string, password: string)
+    constructor(public id_user: number, public name: string, 
+                public surename: string, public mail: string, 
+                public url: string, public password: string)
         {
             this.id_user = id_user,
             this.name = name,

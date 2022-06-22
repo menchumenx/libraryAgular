@@ -1,0 +1,76 @@
+
+
+<!-- D3.3 Esta card debe estar en un contenedor que permita agregar tantas card como se necesite sin
+romper el diseño. -->
+ <!-- D3.4 
+    • Añadir a la página libros un formulario con todos los campos necesarios para crear un libro.
+    • Implementar funcionalidad que cuando se inserten datos en el formulario y se llame al evento
+      click se agregue un nuevo libro al array libros del componente. -->
+
+<div class="container main">
+
+    <div *ngIf = "mylibros.length >=1; else sinLibros" class="ngIfcontainer">
+    <!-- usamos el indice del ngFOr con la propiedad even(par) -->
+        <div *ngFor="let libro of mylibros; let botonPar = even">
+
+            <div class="card" style="width: 18rem;">
+                <img src="{{libro.foto}}" class="card-img-top" style="width: 100%; max-height: 350px;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #2170b0ea;">{{libro.titulo}}</h5>
+                    <p class="card-text" >{{libro.autor}}</p>
+                    <p class="card-text"style="color: #acabab;" >{{libro.precio}} €</p>
+
+                    <div class=" card__end">
+                        <p class="card-text "style="color: #acabab;" >{{libro.id_libro | pipeRef}} </p>
+                        <!-- cambiamos el boton de color segun la condicion de si es par usando el indice del ngFor -->
+                        <button class="buttonCard" [ngClass]=" botonPar ? 'buttonCard' : 'buttonCard2' ">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ng-template #sinLibros >No hay libros en stock</ng-template>
+
+    <!-- FORM -->
+<div class="form">
+    <form action="" class="formContainer">
+        <div class="formContainer--data">
+            <label for="">Id del Libro</label>
+            <input #id class="formContainer_input"  placeholder="Introduce el ID del libro" type="text">
+        </div>
+        <div class="formContainer--data">
+            <label for="">Titulo del Libro</label>
+            <input #titulo class="formContainer_input"  placeholder="Introduce el titulo del libro" type="text">
+        </div>
+        <div class="formContainer--data">
+            <label for="">Tipo</label>
+            <input #tipo class="formContainer_input"  placeholder="Introduce el tipo" type="text">
+        </div>
+        <div class="formContainer--data">
+            <label for="">Autor</label>
+            <input #autor class="formContainer_input"  placeholder="Introduce el Autor" type="text">
+        </div>
+        <div class="formContainer--data">
+            <label for="">Precio</label>
+            <input #precio class="formContainer_input"  placeholder="Introduce el precio de venta" type="number">
+        </div>
+
+        <div class="formContainer--data">
+            <label for="">Portada</label>
+            <input #foto class="formContainer_input"  placeholder="Introduce una url para la portada" type="text">
+        </div>
+
+    </form>
+
+    <div class="endForm">
+        <button  type="button" class="endForm__button" (click)="updateBook(id.value, titulo.value, tipo.value, autor.value, precio.value, foto.value)">Insertar Libro</button>
+    </div>
+
+</div> 
+   
+
+
+<!-- cierre de main -->
+</div>
+

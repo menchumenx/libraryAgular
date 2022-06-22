@@ -14,7 +14,8 @@ export class PerfilComponent implements OnInit {
   public miUser:Usuario
 
   constructor() { 
-
+// RETO 4. Modificar el html para que toda la información del usuario no este hard-coded en el template HTML sino
+// que sea una variable en el código del componente.
       this.miUser = new Usuario (1, 'Menchu', 'Martin',
                     'menchu@gmail.com','','12345678')
       console.log(this.miUser);
@@ -29,6 +30,7 @@ export class PerfilComponent implements OnInit {
     } else{
       this.miUser.name = name;
     }
+    
     if(surename == ''){
       surename = null
     } else {
@@ -46,6 +48,7 @@ export class PerfilComponent implements OnInit {
     } else {
       this.miUser.url = url;
     }
+   
   }
 
 

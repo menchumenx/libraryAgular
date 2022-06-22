@@ -1,0 +1,105 @@
+
+
+.main{
+    margin-top: 300px;
+  
+}
+
+/* CARDS ------------------------------------ */
+.ngIfcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.text__color{
+    color: var(--blue_text);
+}
+.card__end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttonCard{
+    width: 50%;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.buttonCard2{
+    width: 50%;
+    background-color: #0c2b49e8;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+
+
+/* FORMULARIO ----------------------------- */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0  rgba(32, 112, 177, 0.215), 0 6px 20px 0  rgba(32, 112, 177, 0.263);
+
+
+    margin-bottom: 200px;
+    padding: 50px;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer_input{
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+    border: solid 1px var(--input_border);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.formContainer_input:hover{
+    border: solid 1px var(--darkBluel_OP);
+  
+}
+
+.formContainer--data label {
+    margin-bottom: 5px;
+    color: var(--input_border);  
+    display: flex;
+    flex-direction: column;
+}
+.endForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    
+}
+.endForm__button{
+    margin-top: 30px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--input_border);
+    color: var(--whiteText);
+}
+.endForm__button:hover{
+    background-color: var(--darkBluel_OP);
+
+}
+
