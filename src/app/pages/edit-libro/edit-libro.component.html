@@ -1,0 +1,51 @@
+
+<div class="main">
+
+
+<div class="form">
+
+    <!-- FORM EDITAR ------------------------------------ -->
+    <div class="form_bloque">
+      
+        <form action="" class="formContainer">
+
+            <h2 class="mb-4">Edita un Libro</h2>
+
+            <div class="formContainer--data">
+                <label for="">Id del Libro</label>
+                <input #id class="formContainer_input"  placeholder="Introduce el ID del libro" type="text">
+            </div>
+            <div class="formContainer--data">
+                <label for="">Titulo del Libro</label>
+                <input #titulo class="formContainer_input"  placeholder="Introduce el titulo del libro" type="text">
+            </div>
+            <div class="formContainer--data">
+                <label for="">Tipo</label>
+                <input #tipo class="formContainer_input"  placeholder="Introduce el tipo" type="text">
+            </div>
+            <div class="formContainer--data">
+                <label for="">Autor</label>
+                <input #autor class="formContainer_input"  placeholder="Introduce el Autor" type="text">
+            </div>
+            <div class="formContainer--data">
+                <label for="">Precio</label>
+                <input #precio class="formContainer_input"  placeholder="Introduce el precio de venta" type="number">
+            </div>
+
+            <div class="formContainer--data">
+                <label for="">Portada</label>
+                <input #foto class="formContainer_input"  placeholder="Introduce una url para la portada" type="text">
+            </div>
+
+        </form>
+
+        <div class="endForm">
+            <button  type="button" class="endForm__button" (click)="updateBook(id.value, titulo.value, tipo.value, autor.value, precio.value, foto.value)">Edita un Libro</button>
+        </div>
+    </div>
+
+</div> 
+   
+
+</div>
+

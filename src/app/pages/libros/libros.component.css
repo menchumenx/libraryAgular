@@ -5,6 +5,36 @@
   
 }
 
+/* SEARCH ------------------------------------ */
+.buscador{
+    margin-bottom: 50px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.buscador input{
+    width: 30%;
+    padding: 10px;
+    border: solid 1px var(--input_border);
+    border-radius: 3px;
+}
+.buscador button{
+    border: none;
+    border-radius: 3px;
+    width: 20%;
+    background-color: var(--darkBluel_OP);
+    color: var(--whiteText);
+}
+.buscador button:hover{
+    box-shadow: 2px 4px 8px 2px  rgba(32, 112, 177, 0.215), 2px 6px 20px 2px  rgba(32, 112, 177, 0.263);
+
+}
+
+
+
 /* CARDS ------------------------------------ */
 .ngIfcontainer{
     display: flex;
@@ -37,69 +67,21 @@
     color: white;
     padding: 10px;
 }
-
-
-
-/* FORMULARIO ----------------------------- */
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-    background-color: white;
-    box-shadow: 0 4px 8px 0  rgba(32, 112, 177, 0.215), 0 6px 20px 0  rgba(32, 112, 177, 0.263);
-
-
-    margin-bottom: 200px;
-    padding: 50px;
+.card-container{
+    position: relative;
 }
 
-.formContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+.borrar_card{
+    position: absolute;
+    right: 0;
+    margin: 10px;
 
-.formContainer_input{
-    width: 300px;
-    height: 20px;
-    padding: 10px;
-    border: solid 1px var(--input_border);
-    border-radius: 3px;
-    margin-bottom: 10px;
-}
-.formContainer_input:hover{
-    border: solid 1px var(--darkBluel_OP);
-  
-}
-
-.formContainer--data label {
-    margin-bottom: 5px;
-    color: var(--input_border);  
-    display: flex;
-    flex-direction: column;
-}
-.endForm{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 50%;
-    
-}
-.endForm__button{
-    margin-top: 30px;
-    width: 50%;
-    padding: 10px;
-    border-radius: 3px;
     border: none;
-    background-color: var(--input_border);
-    color: var(--whiteText);
-}
-.endForm__button:hover{
+    border-radius: 3px;
     background-color: var(--darkBluel_OP);
-
+    color: var(--whiteText);
+    width: 10%;
 }
-
+.borrar_card:hover{
+    background-color: red;
+}
