@@ -13,6 +13,7 @@ import { LibrosComponent } from './pages/libros/libros.component';
 import { PipeRefPipe } from './pipes/pipe-ref.pipe';
 import { CrearLibroComponent } from './pages/crear-libro/crear-libro.component';
 import { EditLibroComponent } from './pages/edit-libro/edit-libro.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import { EditLibroComponent } from './pages/edit-libro/edit-libro.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

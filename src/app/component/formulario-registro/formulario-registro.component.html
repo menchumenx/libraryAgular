@@ -1,10 +1,10 @@
 
 <div>
 
-    <form class="formContainer" action="">
-        <div class="formContainer--prueba">
+    <form  #useForm="ngForm" (ngSubmit)="onSubmit(registroForm)" class="formContainer" >
+        <div class="formContainer--prueba form-group">
             <label for="">Nombre</label>
-            <input class="formContainer_input" placeholder="Introduce tu nombre" type="text">
+            <input name="name" [(ngModel)]="user.u_name" class="formContainer_input" placeholder="Introduce tu nombre" type="text">
         </div>
 
         <div class="formContainer--prueba">
